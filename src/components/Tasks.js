@@ -3,12 +3,15 @@ import Task from './Task';
 import { TaskContext } from './TaskContext';
 
 const Tasks = () => {
-    // eslint-disable-next-line no-unused-vars
-    const [tasks, setTasks] = useContext(TaskContext)
+  
+  // eslint-disable-next-line no-unused-vars
+  const [tasks, setTasks] = useContext(TaskContext);
   return (
-    <div>{tasks.map(task => (
+    <div>
+      {tasks.length > 0 ? tasks.map(task => (
         <Task key={task.id} task={task} />
-    ))}</div>
+      )) : "No task to show"}
+    </div>
   )
 }
 
