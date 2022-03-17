@@ -8,7 +8,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  color: steelblue;
+  color: rgba(0, 0, 0, 0.616);
 }
 
 .container {
@@ -16,7 +16,6 @@ body {
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
   padding: 30px;
   border-radius: 5px;
 }
@@ -30,7 +29,6 @@ body {
 
 .btn {
   display: inline-block;
-  background: steelblue;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -50,7 +48,16 @@ body {
   transform: scale(0.98);
 }
 
+.btn-red {
+  background-color: darkred;
+}
+
+.btn-blue {
+  background-color: green;
+}
+
 .btn-block {
+  background-color: rgba(0, 0, 0, 0.616);
   display: block;
   width: 100%;
 }

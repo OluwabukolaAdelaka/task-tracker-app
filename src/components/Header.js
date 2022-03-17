@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-const Header = () => {
+const Header = ({showAdd, setShowAdd}) => {
   return (
     <div className='header'>
         <h1>Task Tracker</h1>
-        <button className='btn'>Add</button>
+        <button onClick={() => setShowAdd(!showAdd)} className={`btn ${showAdd ? 'btn-red' : 'btn-blue'}`} >{showAdd ? 'Close' : 'Add'}</button>
     </div>
   )
 }
